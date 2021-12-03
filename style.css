@@ -60,8 +60,18 @@ span {
 }
 
 ul.primaryList {
-  list-style-type: circle;
+  list-style-type: none;
+  color: white;
   padding: 20px;
+}
+
+ul.primaryList> li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
 }
 
 ul.secondaryList {
